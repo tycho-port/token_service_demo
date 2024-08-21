@@ -1,0 +1,41 @@
+{
+  "name": "axios",
+  "version": "0.0.0",
+  "description": "Example implementation refresh token handler",
+  "scripts": {
+    "start": "nodemon",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "author": "tycho-port",
+  "license": "MIT",
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [],
+    "exec": "NODE_PATH=./src ./node_modules/.bin/ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "jwt-decode": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.5.9",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.48.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.7",
+    "typescript": "^5.2.2"
+  }
+}
